@@ -93,10 +93,9 @@ trait HandlesNavigationBuilder
                     TextInput::make('label.' . $this->activeLocale)
                         ->label(__('filament-navigation::filament-navigation.items-modal.label'))
                         ->saveRelationshipsWhenHidden()
-                        ->reactive()
                         ->required(),
-                    Hidden::make('label.en')->reactive(),
-                    Hidden::make('label.de')->reactive(),
+                    Hidden::make('label.en'),
+                    Hidden::make('label.de'),
 
                     Select::make('type')
                         ->label(__('filament-navigation::filament-navigation.items-modal.type'))
